@@ -75,6 +75,11 @@
 <script src="https://unpkg.com/jquery"></script>
 <script>
   // Add your code here!
+  $("article img").addClass("image-center");
+  $("article p:last-child").remove();
+  let randomSize = Math.floor(Math.random() * 101);
+  $("#title").css("fontSize", `${randomSize}px`);
+ 
 </script>
 </body>
 
