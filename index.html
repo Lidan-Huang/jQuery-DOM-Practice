@@ -83,11 +83,14 @@
   $("aside").empty().append($("<p>").text("Sorry for the list's existence."));
   function change(evt) {
     let $rgb = $(".form-control");
-    
     let [r, g, b] = [...$rgb];
     $("body").css("background-color", `rgb(${r.value}, ${g.value}, ${b.value})`);
   }
   $('.form-control').on("change", change);
+
+  $('article img').click(function(){
+    $(".image-center").remove();
+  });
 
 </script>
 </body>
